@@ -1,80 +1,328 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Pokémon Fanmade</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Pokémon Fanmade</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pokédex</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Fanart</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Fan Games</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Comunidade</a>
-          </li>
-        </ul>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projeto - Pokedex</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+
+    Bulma: Free, open source, and modern CSS framework based on Flexbox
+Docs
+Videos
+Expo
+Love
+Backers
+Everyone who is supporting Bulma via Patreon and GitHub
+Bulma extensions
+Side projects to enhance Bulma
+The official Bulma book
+A step-by-step guide that teaches you how to build a web interface from scratch using Bulma
+Blog
+Stay updated with new features
+Brand
+The official Bulma logos
+Bulma start
+A tiny npm package to get started
+Made with Bulma
+The official community badge
+Coming from Bootstrap
+See how Bulma is an alternative to Bootstrap
+Search the docs
+Filter links
+GUIDES
+
+Overview
+Customize
+Utilities
+CSS LIBRARY
+
+Columns
+Elements
+Components
+Form
+Layout
+Container
+Level
+Media Object
+Hero
+Section
+Footer
+Tiles
+Helpers
+Media Object
+
+The famous media object prevalent in social media interfaces, but useful in any context
+
+The media object is a UI element perfect for repeatable and nestable content.
+
+Example
+
+John Smith @johnsmith 31m
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+
+HTML
+<article class="media">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="https://bulma.io/images/placeholders/128x128.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+      </p>
+    </div>
+    <nav class="level is-mobile">
+      <div class="level-left">
+        <a class="level-item">
+          <span class="icon is-small"><i class="fas fa-reply"></i></span>
+        </a>
+        <a class="level-item">
+          <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+        </a>
+        <a class="level-item">
+          <span class="icon is-small"><i class="fas fa-heart"></i></span>
+        </a>
       </div>
     </nav>
-  </header>
+  </div>
+  <div class="media-right">
+    <button class="delete"></button>
+  </div>
+</article>
+You can include any other Bulma element, like inputs, textareas, icons, buttons… or even a navbar.
 
-  <section class="banner">
-    <div class="container">
-      <h1>Welcome to Pokémon Fanmade!</h1>
-      <p>Explore the world of fan-created Pokémon.</p>
+Example
+
+Add a comment...
+ Press enter to submit
+HTML
+<article class="media">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="https://bulma.io/images/placeholders/128x128.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="field">
+      <p class="control">
+        <textarea class="textarea" placeholder="Add a comment..."></textarea>
+      </p>
     </div>
-  </section>
-
-  <section class="pokemon-section">
-    <div class="container">
-      <h2>Featured Fanmade Pokémon</h2>
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="pokemon-card">
-            <img src="pokemon1.jpg" alt="Pokemon 1">
-            <h3>Pokemon 1</h3>
-            <p>Description of Pokemon 1.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="pokemon-card">
-            <img src="pokemon2.jpg" alt="Pokemon 2">
-            <h3>Pokemon 2</h3>
-            <p>Description of Pokemon 2.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="pokemon-card">
-            <img src="pokemon3.jpg" alt="Pokemon 3">
-            <h3>Pokemon 3</h3>
-            <p>Description of Pokemon 3.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
+    <nav class="level">
+      <div class="level-left">
+        <div class="level-item">
+          <a class="button is-info">Submit</a>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="level-right">
+        <div class="level-item">
+          <label class="checkbox">
+            <input type="checkbox"> Press enter to submit
+          </label>
+        </div>
+      </div>
+    </nav>
+  </div>
+</article>
+Nesting#
+You can nest media objects up to 3 levels deep.
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Pokémon Fanmade. All rights reserved.</p>
-    </div>
-  </footer>
+Example
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd
+Barbara Middleton
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.
+Like · Reply · 3 hrs
+
+
+Sean Brown
+Donec sollicitudin urna eget eros malesuada sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam blandit nisl a nulla sagittis, a lobortis leo feugiat.
+Like · Reply · 2 hrs
+
+Vivamus quis semper metus, non tincidunt dolor. Vivamus in mi eu lorem cursus ullamcorper sit amet nec massa.
+Morbi vitae diam et purus tincidunt porttitor vel vitae augue. Praesent malesuada metus sed pharetra euismod. Cras tellus odio, tincidunt iaculis diam non, porta aliquet tortor.
+
+Kayli Eunice
+Sed convallis scelerisque mauris, non pulvinar nunc mattis vel. Maecenas varius felis sit amet magna vestibulum euismod malesuada cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus lacinia non nisl id feugiat.
+Like · Reply · 2 hrs
+
+
+Add a comment...
+
+HTML
+<article class="media">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="https://bulma.io/images/placeholders/128x128.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong>Barbara Middleton</strong>
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.
+        <br>
+        <small><a>Like</a> · <a>Reply</a> · 3 hrs</small>
+      </p>
+    </div>
+
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-48x48">
+          <img src="https://bulma.io/images/placeholders/96x96.png">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Sean Brown</strong>
+            <br>
+            Donec sollicitudin urna eget eros malesuada sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam blandit nisl a nulla sagittis, a lobortis leo feugiat.
+            <br>
+            <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+          </p>
+        </div>
+
+        <article class="media">
+          Vivamus quis semper metus, non tincidunt dolor. Vivamus in mi eu lorem cursus ullamcorper sit amet nec massa.
+        </article>
+
+        <article class="media">
+          Morbi vitae diam et purus tincidunt porttitor vel vitae augue. Praesent malesuada metus sed pharetra euismod. Cras tellus odio, tincidunt iaculis diam non, porta aliquet tortor.
+        </article>
+      </div>
+    </article>
+
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-48x48">
+          <img src="https://bulma.io/images/placeholders/96x96.png">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Kayli Eunice </strong>
+            <br>
+            Sed convallis scelerisque mauris, non pulvinar nunc mattis vel. Maecenas varius felis sit amet magna vestibulum euismod malesuada cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus lacinia non nisl id feugiat.
+            <br>
+            <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+          </p>
+        </div>
+      </div>
+    </article>
+  </div>
+</article>
+
+<article class="media">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="https://bulma.io/images/placeholders/128x128.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="field">
+      <p class="control">
+        <textarea class="textarea" placeholder="Add a comment..."></textarea>
+      </p>
+    </div>
+    <div class="field">
+      <p class="control">
+        <button class="button">Post comment</button>
+      </p>
+    </div>
+  </div>
+</article>
+Made with BulmaThis page is open source. Noticed a typo? Or something unclear?
+Improve this page on GitHub
+
+Design and Development tips in your inbox. Every weekday.
+ads via Carbon
+My CSS ebook
+
+CSS in 44 minutes book cover
+On this page
+
+Nesting
+Back to top
+Support Bulma 😃
+One-time donation
+
+PayPal – The safer, easier way to pay online.
+Visit our Sponsors
+
+Stock APIs
+Monthly donation
+
+Bulma by Jeremy Thomas.
+@jgthms
+Source code licensed MIT.
+Website content licensed CC BY-NC-SA 4.0
+Contribute on GitHub
+
+Share on social media
+Tweet
+Home
+
+Blog
+
+The Bulma block
+
+New feature: Icon Text
+
+Light/Dark colors, better look, larger controls
+
+Automatic variables docs
+
+View all posts
+
+Documentation
+
+Overview
+
+Utilities
+
+Customize
+
+Helpers
+
+Columns
+
+Layout
+
+Form
+
+Elements
+
+Components
+
+More
+
+Expo
+Official Bulma showcase
+Love
+Fans of Bulma around the world
+Backers
+Everyone who is supporting Bulma via Patreon and GitHub
+Bulma extensions
+Side projects to enhance Bulma
+The official Bulma book
+A step-by-step guide that teaches you how to build a web interface from scratch using Bulma
+Blog
+Stay updated with new features
+Brand
+The official Bulma logos
+Bulma start
+A tiny npm package to get started
+Made with Bulma
+The official community badge
+Coming from Bootstrap
+See how Bulma is an alternative to Bootstrap
+  </body>

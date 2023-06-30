@@ -1,62 +1,72 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Projeto - Pokedex</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projeto - Pokedex</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://github.com/KingSP13/Pokedex">
+          <img src="images/logo.webp" width="112" height="28">
+        </a>
+    
+        <!--<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true">Home</span>
+          <span aria-hidden="true">Pokedex</span>
+          <span aria-hidden="true">Gallery</span>
+        </a> -->
+      </div>
+    
+      <div id="navbar" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+    
+          <a class="navbar-item">
+            Pokedex
+          </a>
+          
+          <a class="navbar-item">
+            Gallery
+          </a>
+        </div>
+      </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Meet Us !
+        </a>
 
-</head>
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">POKEHUT</a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            Who we are.
+          </a>
+          <a class="navbar-item">
+            Send us hi.
+          </a>
+        </div>
+      </div>
+        
 
-        <!-- Botão de colapse da navbar em pequenas telas -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav"> 
-        <!-- Botão de colapse da navbar em pequenas telas -->
-
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pokedex</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Gallery</a>
-          </li>
-            <li class="nav-item nav-itemright">
-              <a class="nav-link" href="#">Meet our Team</a>
-            </li>
-            <li class="nav-item nav-itemright">
-              <a class="nav-link" href="#">Send us Hi !</a>
-            </li>
-        </ul>
+        <!--<div class="navbar-end2">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button is-primary">
+                    <strong>Sign up</strong>
+                  </a>
+                  <a class="button is-light">
+                    Log in
+                  </a>
+                </div>
+              </div>
+            </div> -->
       </div>
     </nav>
-  </header>   
-  <section class="banner">
-    <div class="container container1">
-      <h1>Welcome to POKEHUT.</h1>
-      <p>Grab a cup of coffee,<br> spare a few minutes and<br> find your favorite pokemon..</p>
-    </div>
-    <div class="container, container2">
-      <h1>Welcome to POKEHUT.</h1>
-      <p>Grab a cup of coffee,<br> spare a few minutes and<br> find your favorite pokemon..</p>
-    </div>
-  </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Pok&eacutemon Fanmade. All rights reserved.</p>
-    </div>
-  </footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
