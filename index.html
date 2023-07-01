@@ -8,65 +8,93 @@
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://github.com/KingSP13/Pokedex">
-          <img src="images/logo.webp" width="112" height="28">
-        </a>
     
-        <!--<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true">Home</span>
-          <span aria-hidden="true">Pokedex</span>
-          <span aria-hidden="true">Gallery</span>
-        </a> -->
-      </div>
-    
-      <div id="navbar" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item">
-            Home
-          </a>
-    
-          <a class="navbar-item">
-            Pokedex
-          </a>
-          
-          <a class="navbar-item">
-            Gallery
-          </a>
-        </div>
-      </div>
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          Meet Us !
-        </a>
-
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
-            Who we are.
-          </a>
-          <a class="navbar-item">
-            Send us hi.
-          </a>
-        </div>
-      </div>
-        
-
-        <!--<div class="navbar-end2">
-              <div class="navbar-item">
-                <div class="buttons">
-                  <a class="button is-primary">
-                    <strong>Sign up</strong>
+    <section class="hero is-white is-fullheight">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <header class="navbar">
+          <div class="container">
+            <div class="navbar-brand is-6">
+              <a class="navbar-item">
+                <img src="images/logo.png" height="100%" width="100%" alt="Logo">
+              </a>
+              <!-- <span class="navbar-burger" data-target="navbarMenuHeroC">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span> MENU HAMBURGUER PRO MOBILE HABILITAR DEPOIS -->
+            </div>
+            <div id="navbarMenuHeroC" class="navbar-menu">
+              <div class="navbar">
+                <div class="navbar-start">
+                  <a class="navbar-item">
+                    Home
                   </a>
-                  <a class="button is-light">
-                    Log in
+            
+                  <a class="navbar-item">
+                    Pokedex
+                  </a>
+                  
+                  <a class="navbar-item">
+                    Gallery
                   </a>
                 </div>
               </div>
-            </div> -->
+              <div class="navbar-end navbar-item drop-hover has-dropdown is-hoverable is-cyan">
+                <a class="navbar-link">
+                  Meet Us !
+                </a>
+                <div class="navbar-dropdown">
+                  <div class="dropdown-content">
+                    <div class="dropdown-item">
+                      <p>Here you can find who did this beautiful</p> project and leave a feedback :)
+                    </div>
+                    <hr class="dropdown-divider">
+                    <a class="navbar-item">
+                      Who we are.
+                    </a>
+                    <a class="navbar-item">
+                      Send us hi.
+                    </a>
+                    <hr class="dropdown-divider">
+                    <a class="navbar-item">
+                      <p class="report">Report a problem</p>
+                    </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </header>
       </div>
-    </nav>
-
+    
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title">
+            Title
+          </p>
+          <p class="subtitle">
+            Subtitle
+          </p>
+        </div>
+      </div>
+    
+      <!-- Hero footer: will stick at the bottom -->
+      <div class="hero-foot">
+        <nav class="tabs is-boxed is-fullwidth">
+          <div class="container">
+            <ul>
+              <li class="is-active"><a>Overview</a></li>
+              <li><a>Modifiers</a></li>
+              <li><a>Grid</a></li>
+              <li><a>Elements</a></li>
+              <li><a>Components</a></li>
+              <li><a>Layout</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
 
   </body>
 </html>
