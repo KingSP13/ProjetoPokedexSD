@@ -10,6 +10,23 @@
     margin: 0;
     padding: 0;
 }
+.minilogo {
+    width: fit-content;
+}
 .report {
     color: red;
+}
+
+.navbar-item {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 50%;
+}
+
+.videosub {
+    text-align: center;
 }
