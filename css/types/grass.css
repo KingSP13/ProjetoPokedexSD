@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+html {
+    --color1: #5EC6E0;
+    --color2: #87BAC7;
+    --color3: #658A94;
+    --color4: #314347;
+}
