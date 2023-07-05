@@ -1,20 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Links -->
-  <link rel="icon" href="./favicons/favicon-16x16.png">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="icon" type="image/x-icon" href="../archieves/icons8-pokebola-48.png">
   <link rel="stylesheet" href="../css/pokedex.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
   <!-- Main JS -->
   <script defer src="../js/pokedex.js"></script>
 
-  <title>Pokédex</title>
+  <title>Projeto - Pokedex</title>
 </head>
 <body>
-  
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item navbar-item-left" href="../index.html">
+          <img class="minilogo" src="../archieves/logo.webp" height="100%" width="100%" alt="Logo">
+        </a>
+          <span class="navbar-burger" data-target="navbarMenuHeroC">
+          <span>
+          <!--   <a href="html/lobby.html">Lobby</a>
+          </span> -->
+          <span>
+            <a href="pokedex.html">Pokedex</a>
+          </span>
+          <!-- <span>
+            <a href="html/gallery.html">Gallery</a>
+          </span>
+        </span> -->
+      </div>
+      <div id="navbarMenuHeroC" class="navbar-menu">
+        <div class="navbar">
+          <div class="navbar-start">
+            <a class="navbar-item navbar-item-left" href="lobby.html">
+              Lobby
+            </a>
+      
+            <a class="navbar-item navbar-item-left" href="pokedex.html">
+              Pokedex
+            </a>
+            
+            <a class="navbar-item navbar-item-left" href="gallery.html">
+              Gallery
+            </a>
+          </div>
+        </div>
+          <div class="navbar-end navbar-item drop-hover has-dropdown is-hoverable is-cyan">
+            <a class="navbar-link">
+              Meet Us !
+            </a>
+              <div class="navbar-dropdown">
+                <div class="dropdown-content">
+                  <div class="dropdown-item">
+                    <p>Here you can find who did this beautiful</p> project and leave a feedback :)
+                  </div>
+                  <hr class="dropdown-divider">
+                  <a class="navbar-item" href="whoweare.html">
+                    Who we are.
+                  </a>
+                  <a class="navbar-item" href="sendushi.html">
+                    Send us hi.
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a class="navbar-item" href="reportabug.html">
+                    <p class="report">Report a bug !</p>
+                  </a>
+                </div>
+              </div>
+          </div>
+          <div class="buttons">
+            <a class="button is-dark">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-dark">
+              Log in
+            </a>
+          </div>
+      </div>
+    </div>
+  </header>   
   <main>
     <img src="#" alt="pokemon" class="pokemon__image">
 
@@ -32,9 +101,9 @@
       />
     </form>
 
-    <div class="buttons">
-      <button class="button btn-prev">Prev &lt;</button>
-      <button class="button btn-next">Next &gt;</button>
+    <div class="btns">
+      <button class="btn btn-prev">Prev &lt;</button>
+      <button class="btn btn-next">Next &gt;</button>
     </div>
 
     <img src="../archieves/pokedex.png" alt="pokedex" class="pokedex">
