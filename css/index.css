@@ -16,10 +16,12 @@ body {
     height: 100vh;
     width: 100vw;
     background-image: url(../archieves/background-flat\ \(1\).jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-position: center center;
     background-size: cover;
-
+    background-repeat: no-repeat;
+}
+.navbar {
+    padding-inline: 3vw;
 }
 .report {
     color: red;
