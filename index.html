@@ -11,28 +11,31 @@
   <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">
+        <a class="navbar-item mini-logo" href="index.html">
           <img src="archieves/logo.webp">
         </a>
-        <a role="button" class="navbar-burger" id="menuBurguer" aria-expanded="true">
+    
+        <a role="button" id="menuBurguer" class="navbar-burger menuBurguer" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-          <div class="navbar-menu" id="navMenu">
-            <!-- navbar-start, navbar-end... -->
-              <a class="navbar-item navbar-item-left" href="./html/lobby.html">
-                Lobby
-              </a>
-        
-              <a class="navbar-item navbar-item-left" href="./html/pokedex.html">
-                Pokedex
-              </a>
-              
-              <a class="navbar-item navbar-item-left" href="./html/gallery.html">
-                Gallery
-              </a>
         </a>
       </div>
+    
+      <div id="burguerItems" class="navbar-menu burguerItems menuBurguer">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#">
+            Lobby
+          </a>
+    
+          <a class="navbar-item" href="html/pokedex.html">
+            Pokedex
+          </a>
+    
+          <a class="navbar-item" href="#">
+            Gallery
+          </a>
+  
       <div class="is-right navbar-item drop-hover has-dropdown is-hoverable is-hidden-touch">
         <a class="navbar-link">
           Meet Us !
@@ -43,28 +46,31 @@
               <p>Here you can find who did this beautiful</p> project and leave a feedback :)
             </div>
             <hr class="dropdown-divider">
-            <a class="navbar-item" href="./html/whoweare.html">
+            <a class="navbar-item" href="#">
               Who we are.
             </a>
-            <a class="navbar-item" href="./html/sendushi.html">
+            <a class="navbar-item" href="#">
               Send us hi.
             </a>
             <hr class="dropdown-divider">
-            <a class="navbar-item" href="./html/reportabug.html">
+            <a class="navbar-item" href="#">
               <p class="report">Report a bug !</p>
             </a>
           </div>
         </div>
       </div>
     </nav>
+
     <main>
       <div class="main-container">
-        <p class="title central-text">
-          Hello, welcome to PokeHUT
-        </p>
-        <p class="subtitle central-text">
-          This is a fanmade website with pokemon <br> information and full customized experience. <br>Enjoy !
-        </p>
+        <span>
+          <p class="title central-text">
+            Hello, welcome to PokeHUT
+          </p>
+          <p class="subtitle central-text">
+            This is a fanmade website with pokemon <br> information and full customized experience. <br>Enjoy !
+          </p>
+        </span>
       </div>
     </main>
   <script src="js/index.js"></script>

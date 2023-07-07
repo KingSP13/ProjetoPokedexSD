@@ -1,5 +1,7 @@
-const menuBurguer = document.getElementById('menuBurguer')
+const triggerMenuBurger = document.getElementById('menuBurguer')
+const showBurguerItems = document.getElementById('burguerItems')
 
-menuBurguer.addEventListener('click', function() {
-    menuBurguer.classList.toggle('is-active')
+triggerMenuBurger.addEventListener('click', function() {
+  triggerMenuBurger.classList.toggle('is-active')
+  showBurguerItems.classList.toggle('is-active')
 })

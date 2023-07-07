@@ -2,13 +2,13 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 @media (max-width: 1039px) {
 
-.navbar {
-    display: flex;
-    padding-inline: 10%;
-}
 .navbar-burger {
     position: fixed;
-    right: 5vw;
+    right: 7.5vw;
+}
+.mini-logo {
+    position: fixed;
+    left: 7.5vw;
 }
 }
 /*  BREAKPOINTS AT:
@@ -21,11 +21,14 @@ html {
     --color2: #87BAC7;
     --color3: #658A94;
     --color4: #314347;
+
+    font-family: 'Courier New', Courier, monospace;
 }
 * {
     margin: 0;
     padding: 0;
 }
+
 body {
     height: 100vh;
     width: 100vw;
@@ -34,9 +37,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.navbar {
-    padding-inline: 8vw;
-}
+
 .report {
     color: red;
 }
@@ -45,5 +46,5 @@ body {
 }
 .main-container {
     text-align: center;
-    margin-top: 15vh;
+    margin: 15vh 15vw 20vh;
 }
