@@ -3,88 +3,64 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Links -->
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="icon" type="image/x-icon" href="../archieves/icons8-pokebola-48.png">
-  <link rel="stylesheet" href="../css/pokedex.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-
-  <!-- Main JS -->
-  <script defer src="../js/pokedex.js"></script>
-
-  <title>Projeto - Pokedex</title>
-</head>
-<body>
-  <header class="navbar">
-    <div class="container">
+    <title>Projeto - Pokedex</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="icon" type="image/x-icon" href="../archieves/icons8-pokebola-48.png">
+  </head>
+  <body class="pokedexBody">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item navbar-item-left" href="../index.html">
-          <img class="minilogo" src="../archieves/logo.webp" height="100%" width="100%" alt="Logo">
+        <a class="navbar-item mini-logo" href="../index.html">
+          <img src="../archieves/logo.webp">
         </a>
-          <span class="navbar-burger" data-target="navbarMenuHeroC">
-          <span>
-          <!--   <a href="html/lobby.html">Lobby</a>
-          </span> -->
-          <span>
-            <a href="pokedex.html">Pokedex</a>
-          </span>
-          <!-- <span>
-            <a href="html/gallery.html">Gallery</a>
-          </span>
-        </span> -->
+    
+        <a role="button" id="menuBurguer" class="navbar-burger menuBurguer" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-      <div id="navbarMenuHeroC" class="navbar-menu">
-        <div class="navbar">
-          <div class="navbar-start">
-            <a class="navbar-item navbar-item-left" href="lobby.html">
-              Lobby
+    
+      <div id="burguerItems" class="navbar-menu burguerItems menuBurguer">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#">
+            Lobby
+          </a>
+    
+          <a class="navbar-item" href="pokedex.html">
+            Pokedex
+          </a>
+    
+          <a class="navbar-item" href="#">
+            Gallery
+          </a>
+  
+      <div class="is-right navbar-item drop-hover has-dropdown is-hoverable is-hidden-touch">
+        <a class="navbar-link">
+          Meet Us !
+        </a>
+        <div class="navbar-dropdown">
+          <div class="dropdown-content">
+            <div class="dropdown-item">
+              <p>Here you can find who did this beautiful</p> project and leave a feedback :)
+            </div>
+            <hr class="dropdown-divider">
+            <a class="navbar-item" href="#">
+              Who we are.
             </a>
-      
-            <a class="navbar-item navbar-item-left" href="pokedex.html">
-              Pokedex
+            <a class="navbar-item" href="#">
+              Send us hi.
             </a>
-            
-            <a class="navbar-item navbar-item-left" href="gallery.html">
-              Gallery
+            <hr class="dropdown-divider">
+            <a class="navbar-item" href="#">
+              <p class="report">Report a bug !</p>
             </a>
           </div>
         </div>
-          <div class="navbar-end navbar-item drop-hover has-dropdown is-hoverable is-cyan">
-            <a class="navbar-link">
-              Meet Us !
-            </a>
-              <div class="navbar-dropdown">
-                <div class="dropdown-content">
-                  <div class="dropdown-item">
-                    <p>Here you can find who did this beautiful</p> project and leave a feedback :)
-                  </div>
-                  <hr class="dropdown-divider">
-                  <a class="navbar-item" href="whoweare.html">
-                    Who we are.
-                  </a>
-                  <a class="navbar-item" href="sendushi.html">
-                    Send us hi.
-                  </a>
-                  <hr class="dropdown-divider">
-                  <a class="navbar-item" href="reportabug.html">
-                    <p class="report">Report a bug !</p>
-                  </a>
-                </div>
-              </div>
-          </div>
-          <div class="buttons">
-            <a class="button is-dark">
-              <strong>Sign up</strong>
-            </a>
-            <a class="button is-dark">
-              Log in
-            </a>
-          </div>
       </div>
-    </div>
-  </header>   
-  <main>
+    </nav>
+  <main class="pokedexMain">
     <img src="#" alt="pokemon" class="pokemon__image">
 
     <h1 class="pokemon__data">
@@ -108,6 +84,7 @@
 
     <img src="../archieves/pokedex.png" alt="pokedex" class="pokedex">
   </main>
-
+<script src="../js/pokedex.js"></script>
+<script src="../js/index.js"></script>
 </body>
 </html>

@@ -1,42 +1,15 @@
-* { box-sizing: border-box}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .slides {
-  width: 300px;
-  height: 300px;
-  background: tomato;
-  animation: images 4s linear 0s infinite alternate;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.teste {
-    width: 300px;
-    height: 300px;
-    background-color: red;
+form {
+  width: fit-content;
+  min-width: 300px;
+  border: 1px;
+  border-style: solid;
+  border-color: red;
+  height: 350px;
+  min-height: 100px;
 }
-
-@keyframes images {
-  0% {
-    background: url('https://fillmurray.com/300/300')
-  }
-  
-  50% {
-   background: url('http://www.placecage.com/c/300/300');
-  }
-  
-  100% {
-    background: url('https://stevensegallery.com/300/300')
-  }
-}
- */
