@@ -4,13 +4,10 @@
 @media (max-width: 1039px) {
 
 .navbar-burger {
-    position: fixed;
     width: 100px;
     right: 5vw;
-    z-index: 0;
 }
 .mini-logo {
-    position: fixed;
     width: 100px;
     left: 5vw;
 }
@@ -39,7 +36,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
 .bodyHome {
     height: 100vh;
