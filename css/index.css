@@ -2,43 +2,34 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
 
-@media (max-width: 1039px) {
-  .navbar-burger {
-    width: 100px;
-    right: 5vw;
-  }
-  .mini-logo {
-    width: 100px;
-    left: 5vw;
-  }
+@media (max-width: 1023px) {
+.navbar-burger {
+  width: 100px;
+  right: 5vw;
+}
+.mini-logo {
+  width: 100px;
+  left: 5vw;
+}
 
-  .main-container {
-    width: fit-content;
-    height: fit-content;
-    padding-inline: 29vw;
-  }
+.main-container {
+  width: fit-content;
+  height: fit-content;
+  padding-inline: 29vw;
+}
+}
+
+@media (min-width: 1024px) {
+.navbar {
+  padding-inline: 8vw;
+}
 }
 
 html {
-  --color1: #5EC6E0;
+  --color1: #ffffff;
   --color2: #87BAC7;
   --color3: #658A94;
   --color4: #314347;
-
-  --firee1: #f4e5a3;
-  --firee2: #ec8146;
-  --firee3: #bf2121;
-  --firee4: #9a1919;
-
-  --grass1: #3DE0BD;
-  --grass2: #34ED87;
-  --grass3: #4c9500;
-  --grass4: #3d7800;
-
-  --water1: #8CFAF5;
-  --water2: #05CEF7;
-  --water3: #0588ED;
-  --water4: #0d53b0;
 
   font-family: 'Courier New', Courier, monospace;
 }
@@ -49,8 +40,36 @@ html {
   box-sizing: border-box;
 }
 
+.fire {
+  --color1: #f4e5a3; /*navbar*/
+  --color2: #ec8146; /*hover*/
+  --color3: #bf2121; /*body*/
+  --color4: #9a1919; /*sections*/
+}
+.grass {
+  --color1: #3DE0BD; /*navbar*/
+  --color2: #3dc97c; /*hover*/
+  --color3: #4c9500; /*body*/
+  --color4: #3d7800; /*sections*/
+}
+.water {
+  --color1: #8CFAF5; /*navbar*/
+  --color2: #05CEF7; /*hover*/
+  --color3: #0588ED; /*body*/
+  --color4: #0d53b0; /*sections*/
+}
+
 .navbar {
-    padding-inline: 5vw;
+  background-color: var(--color1)
+}
+a.navbar-item:hover {
+  background-color: var(--color3);
+  color: white;
+}
+
+.drop-hover {
+  width: 200px;
+  text-align: justify;
 }
 
 .bodyHome {
@@ -64,7 +83,7 @@ html {
 
 .pokedexBody {
   text-align: center;
-  background: linear-gradient(to bottom, #6ab7f5, #fff);
+  background: linear-gradient(to bottom, var(--color1), var(--color4));
   min-height: 100vh;
 }
 
