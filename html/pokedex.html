@@ -7,62 +7,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="icon" type="image/x-icon" href="../archieves/icons8-pokebola-48.png">
+    <script src="js/index.js" defer></script>
+    <script src="../js/pokedex.js" defer></script>
+    <script src="js/navbarFetch.js"></script>
   </head>
   <body class="pokedexBody grass">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item mini-logo" href="../index.html">
-          <img src="../archieves/logo.webp">
-        </a>
-    
-        <a role="button" id="menuBurguer" class="navbar-burger menuBurguer" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-    
-      <div id="burguerItems" class="navbar-menu burguerItems menuBurguer">
-        <div class="navbar-start">
-          <a class="navbar-item" href="lobby.html">
-            Lobby
-          </a>
-    
-          <a class="navbar-item" href="pokedex.html">
-            Pokedex
-          </a>
-    
-          <a class="navbar-item" href="#">
-            Gallery
-          </a>
-          <button class="js-modal-trigger" data-target="modal-js-example">
-            Color Switch
-          </button>
-      </div>
-      <div class="navbar-item drop-hover has-dropdown is-hoverable is-hidden-touch">
-        <a class="navbar-link">
-          Meet Us !
-        </a>
-        <div class="navbar-dropdown">
-          <div class="dropdown-content">
-            <div class="dropdown-item">
-              <p>Here you can find who did this beautiful project and leave a feedback. &#128516;
-            </div>
-            <hr class="dropdown-divider">
-            <a class="navbar-item" href="#">
-              Who we are.
-            </a>
-            <a class="navbar-item" href="#">
-              Send us hi.
-            </a>
-            <hr class="dropdown-divider">
-            <a class="navbar-item" href="#">
-              <p class="report">Report a bug !</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
+  <!--NAVBAR HERE !!!-->
+  <div id="navbar-placeholder"></div>
+  <!--NAVBAR HERE !!!-->
   <main class="pokedexMain">
 
     <img src="#" alt="pokemon" class="pokemon__image">
@@ -103,7 +55,5 @@
   
     <button class="modal-close is-large" aria-label="close"></button>
   </div>
-<script src="../js/pokedex.js"></script>
-<script src="../js/index.js"></script>
 </body>
 </html>
