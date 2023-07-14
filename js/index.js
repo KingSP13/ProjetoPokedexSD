@@ -6,22 +6,28 @@ triggerMenuBurger.classList.toggle('is-active')
 showBurguerItems.classList.toggle('is-active')
 });
 
-
-
-
-
 const switchFire = document.getElementsByClassName('fireTheme')[0];
 const switchGrass = document.getElementsByClassName('grassTheme')[0];
 const switchWater = document.getElementsByClassName('waterTheme')[0];
+const theme = document.getElementsByTagName('body')[0];
 
 switchFire.addEventListener('click', function() {
-  switchFire.classList.toggle('fire')
+  theme.classList.remove('fire')
+  theme.classList.remove('grass')
+  theme.classList.remove('water')
+  theme.classList.add('fire')
 });
 switchGrass.addEventListener('click', function() {
-  switchGrass.classList.toggle('grass')
+  theme.classList.remove('fire')
+  theme.classList.remove('grass')
+  theme.classList.remove('water')
+  theme.classList.add('grass')
 });
 switchWater.addEventListener('click', function() {
-  switchWater.classList.toggle('water')
+  theme.classList.remove('fire')
+  theme.classList.remove('grass')
+  theme.classList.remove('water')
+  theme.classList.add('water')
 });
 
 
