@@ -39,6 +39,9 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  transition: 0.5s;
+}
 
 .fire {
   --color1: #f4e5a3; /*navbar*/
