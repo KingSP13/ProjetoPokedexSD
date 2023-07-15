@@ -1,11 +1,7 @@
-<head>
-  <script src="../js/index.js"></script>
-</head>
-
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item mini-logo" href="index.html">
-      <img src="/archieves/logo.webp">
+      <img src="archieves/logo.webp">
     </a>
 
     <a role="button" id="menuBurger" class="navbar-burger menuBurger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -15,7 +11,7 @@
     </a>
   </div>
 
-  <div id="burgerItems" class="navbar-menu burgerItems menuBurger is-active">
+  <div id="burgerItems" class="navbar-menu burgerItems menuBurger">
     <div class="navbar-start">
       <a class="navbar-item" href="/html/lobby.html">
         Lobby
@@ -23,11 +19,31 @@
 
       <a class="navbar-item" href="/html/pokedex.html">
         Pokedex
-      </a>
-
+      </a>    
       <a class="navbar-item" href="#">
         Gallery
       </a>
+      <a class="navbar-item" id="switchTheme">
+        Switch Theme
+      </a>
+      
+      <dialog>
+
+        <h2> Choose a theme </h2>
+    
+        <a class="navbar-item fireTheme" href="#">
+          Fire Theme
+        </a>
+        <a class="navbar-item grassTheme" href="#">
+          Grass Theme
+        </a>
+        <a class="navbar-item waterTheme" href="#">
+          Water Theme
+        </a>
+    
+        <a>OK</a>
+    
+      </dialog>
     </div>
   </div>
   <div class="navbar-item drop-hover has-dropdown is-hoverable is-hidden-touch">

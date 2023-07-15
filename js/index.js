@@ -47,3 +47,7 @@ switchWater.addEventListener('click', function() {
 // .then(data => {
 // document.getElementById('navbar-placeholder').innerHTML = data;
 // });
+
+$.get("navigation.html", function(data){
+  $("#nav-placeholder").replaceWith(data);
+});
