@@ -35,3 +35,16 @@ switchWater.addEventListener('click', function() {
 // .then(data => {
 // document.getElementById('navbar-placeholder').innerHTML = data;
 // });
+
+
+const switchTheme = document.getElementById("switchTheme")
+const modal = document.querySelector("dialog")
+const buttonClose = document.querySelector("dialog")
+
+switchTheme.onclick = function() {
+  modal.showModal()
+}
+
+buttonClose.onclick = function() {
+  modal.close()
+}
