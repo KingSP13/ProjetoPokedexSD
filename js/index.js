@@ -30,7 +30,6 @@ switchWater.addEventListener('click', function() {
   theme.classList.add('water')
 });
 
-
 // fetch('../html/navbar.html')
 // .then(response => response.text())
 // .then(data => {
