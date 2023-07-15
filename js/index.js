@@ -1,3 +1,12 @@
+fetch('nav.html')
+.then(res => res.text())
+.then(text => {
+    let oldelem = document.querySelector("script#nav-placeholder");
+    let newelem = document.createElement("div");
+    newelem.innerHTML = text;
+    oldelem.parentNode.replaceChild(newelem,oldelem);
+})
+
 const triggerMenuBurger = document.getElementById('menuBurger')
 const showBurguerItems = document.getElementById('burgerItems')
 
@@ -48,6 +57,11 @@ switchWater.addEventListener('click', function() {
 // document.getElementById('navbar-placeholder').innerHTML = data;
 // });
 
-$.get("navigation.html", function(data){
-  $("#nav-placeholder").replaceWith(data);
-});
+fetch('nav.html')
+.then(res => res.text())
+.then(text => {
+    let oldelem = document.querySelector("script#nav-placeholder");
+    let newelem = document.createElement("div");
+    newelem.innerHTML = text;
+    oldelem.parentNode.replaceChild(newelem,oldelem);
+})
