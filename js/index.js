@@ -6,6 +6,18 @@ triggerMenuBurger.classList.toggle('is-active')
 showBurguerItems.classList.toggle('is-active')
 });
 
+const switchTheme = document.getElementById("switchTheme")
+const modal = document.querySelector("dialog")
+const buttonClose = document.querySelector("dialog")
+
+switchTheme.onclick = function() {
+  modal.showModal()
+}
+
+buttonClose.onclick = function() {
+  modal.close()
+}
+
 const switchFire = document.getElementsByClassName('fireTheme')[0];
 const switchGrass = document.getElementsByClassName('grassTheme')[0];
 const switchWater = document.getElementsByClassName('waterTheme')[0];
@@ -35,16 +47,3 @@ switchWater.addEventListener('click', function() {
 // .then(data => {
 // document.getElementById('navbar-placeholder').innerHTML = data;
 // });
-
-
-const switchTheme = document.getElementById("switchTheme")
-const modal = document.querySelector("dialog")
-const buttonClose = document.querySelector("dialog")
-
-switchTheme.onclick = function() {
-  modal.showModal()
-}
-
-buttonClose.onclick = function() {
-  modal.close()
-}
