@@ -1,12 +1,3 @@
-fetch('nav.html')
-.then(res => res.text())
-.then(text => {
-    let oldelem = document.querySelector("script#nav-placeholder");
-    let newelem = document.createElement("div");
-    newelem.innerHTML = text;
-    oldelem.parentNode.replaceChild(newelem,oldelem);
-})
-
 const triggerMenuBurger = document.getElementById('menuBurger')
 const showBurguerItems = document.getElementById('burgerItems')
 
@@ -51,17 +42,4 @@ switchWater.addEventListener('click', function() {
   theme.classList.add('water')
 });
 
-// fetch('../html/navbar.html')
-// .then(response => response.text())
-// .then(data => {
-// document.getElementById('navbar-placeholder').innerHTML = data;
-// });
-
-fetch('nav.html')
-.then(res => res.text())
-.then(text => {
-    let oldelem = document.querySelector("script#nav-placeholder");
-    let newelem = document.createElement("div");
-    newelem.innerHTML = text;
-    oldelem.parentNode.replaceChild(newelem,oldelem);
-})
+var themeSelected = document.getElementById(themeSelect)

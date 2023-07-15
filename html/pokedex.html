@@ -6,7 +6,8 @@
     <title>Projeto - Pokedex</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="icon" type="image/x-icon" href="../archieves/icons8-pokebola-48.png">
+    <link rel="icon" type="image/x-icon" href="../archieves/icons8-pokebola-48
+    .png">
     <script src="../js/index.js" defer></script>
     <script src="../js/pokedex.js" defer></script>
   </head>
@@ -14,8 +15,8 @@
   <!--NAVBAR HERE !!!--> 
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item mini-logo" href="index.html">
-        <img src="../archieves/logo.webp">
+      <a class="navbar-item mini-logo" href="../index.html">
+        <img src="https://i.imgur.com/5Zbu512.png">
       </a>
   
       <a role="button" id="menuBurger" class="navbar-burger menuBurger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -41,20 +42,21 @@
           Switch Theme
         </a>
         
-        <dialog>
+        <dialog class="modalText">
 
           <h2> Choose a theme </h2>
           
           Try our dinamic themes to customize all your experience in the website.
-          <a class="navbar-item fireTheme" href="#">
-            Fire Theme
-          </a>
-          <a class="navbar-item grassTheme" href="#">
-            Grass Theme
-          </a>
-          <a class="navbar-item waterTheme" href="#">
-            Water Theme
-          </a>
+          <div class="themeOptions">
+            <input type="radio" id="themeSelect" name="themeSelect">
+              <img src="https://i.imgur.com/6IozWga.png" class="navbar-item themeType fireTheme">
+              </img>
+              <img src="https://i.imgur.com/BLlx2lK.png" class="navbar-item themeType grassTheme">
+              </img>
+              <img src="https://i.imgur.com/xyZQxv7.png" class="navbar-item themeType waterTheme">
+              </img>
+            </input>
+          </div>
       
           <a>OK</a>
       
@@ -109,7 +111,7 @@
       <button class="btn btn-next">Next &gt;</button>
     </div>
 
-    <img src="../archieves/pokedex.png" class="pokedex__img" alt="pokedex image">
+    <img src="https://i.imgur.com/LptxzYy.png" class="pokedex__img" alt="pokedex image">
     
   </main>
   <div id="modal-js-example" class="modal">

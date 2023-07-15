@@ -38,8 +38,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-body {
   transition: 0.5s;
 }
 
@@ -48,21 +46,21 @@ body {
   --color2: #ec8146; /*hover*/
   --color3: #bf2121; /*body*/
   --color4: #9a1919; /*sections*/
-  background-image: url(../archieves/background-flat\ \(2\).jpg) !important;
+  background-image: url(https://i.imgur.com/CCeBlCw.jpg) !important;
 }
 .grass {
   --color1: #3DE0BD; /*navbar*/
   --color2: #3dc97c; /*hover*/
   --color3: #4c9500; /*body*/
   --color4: #3d7800; /*sections*/
-  background-image: url(../archieves/background-flat\ \(3\).jpg) !important;
+  background-image: url(https://i.imgur.com/WCu5seG.jpg) !important;
 }
 .water {
   --color1: #8CFAF5; /*navbar*/
   --color2: #05CEF7; /*hover*/
   --color3: #0588ED; /*body*/
   --color4: #0d53b0; /*sections*/
-  background-image: url(../archieves/background-flat\ \(4\).jpg) !important;
+  background-image: url(https://i.imgur.com/MPV8aF5.jpg) !important;
 }
 
 dialog {
@@ -82,6 +80,23 @@ dialog::backdrop {
   color: var(--color3);
 }
 
+.themeSelect {
+  display: none;
+}
+
+.themeOptions {
+  display: flex;
+}
+
+.themeType {
+  width: 33.3%;
+  height: 10rem;
+}
+
+.modalText {
+  text-align: center;
+}
+
 .navbar {
   background-color: var(--color1)
 }
@@ -98,7 +113,7 @@ a.navbar-item:hover {
 .bodyHome {
   height: 100vh;
   width: 100vw;
-  background-image: url(../archieves/background-flat\ \(1\).jpg);
+  background-image: url(https://i.imgur.com/uI7nQid.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -107,7 +122,10 @@ a.navbar-item:hover {
 .pokedexBody {
   text-align: center;
   background: linear-gradient(to bottom, var(--color1), var(--color4));
-  min-height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .report {
