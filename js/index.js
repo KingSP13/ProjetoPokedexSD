@@ -24,22 +24,22 @@ const switchWater = document.getElementsByClassName('waterTheme')[0];
 const theme = document.getElementsByTagName('body')[0];
 
 switchFire.addEventListener('click', function() {
-  theme.classList.remove('fire')
-  theme.classList.remove('grass')
-  theme.classList.remove('water')
-  theme.classList.add('fire')
+  theme.classList.remove('palette-fire')
+  theme.classList.remove('palette-grass')
+  theme.classList.remove('palette-water')
+  theme.classList.add('palette-fire')
 });
 switchGrass.addEventListener('click', function() {
-  theme.classList.remove('fire')
-  theme.classList.remove('grass')
-  theme.classList.remove('water')
-  theme.classList.add('grass')
+  theme.classList.remove('palette-fire')
+  theme.classList.remove('palette-grass')
+  theme.classList.remove('palette-water')
+  theme.classList.add('palette-grass')
 });
 switchWater.addEventListener('click', function() {
-  theme.classList.remove('fire')
-  theme.classList.remove('grass')
-  theme.classList.remove('water')
-  theme.classList.add('water')
+  theme.classList.remove('palette-fire')
+  theme.classList.remove('palette-grass')
+  theme.classList.remove('palette-water')
+  theme.classList.add('palette-water')
 });
 
  
