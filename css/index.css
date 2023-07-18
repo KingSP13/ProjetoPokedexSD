@@ -48,6 +48,10 @@ html {
   --color4: #9a1919; /*sections*/
   background-image: url(https://i.imgur.com/CCeBlCw.jpg) !important;
 }
+.fire dialog{
+    color: white;
+}
+
 .grass {
   --color1: #3DE0BD; /*navbar*/
   --color2: #3dc97c; /*hover*/
@@ -55,6 +59,10 @@ html {
   --color4: #3d7800; /*sections*/
   background-image: url(https://i.imgur.com/WCu5seG.jpg) !important;
 }
+.grass dialog{
+    color: white;
+}
+
 .water {
   --color1: #8CFAF5; /*navbar*/
   --color2: #05CEF7; /*hover*/
@@ -62,39 +70,64 @@ html {
   --color4: #0d53b0; /*sections*/
   background-image: url(https://i.imgur.com/MPV8aF5.jpg) !important;
 }
+.water dialog{
+    color: white;
+}
 
 dialog {
-  width: 30rem;
+  width: 33rem;
   max-width: 90vw;
   height: 30rem;
   max-height: 90vw;
-  border-radius: 15px;
+  border-radius: 0.5rem;
+  padding: 1rem;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -55%);
+  border: 2px solid black;
+
+
+  /* transform: translate(-50%, -55%); */
+
+  transform: translate(-50%);
+  display: block;
+  background-color: var(--color4);
+}
+
+.modalText {
+    text-align: center;
 }
 
 dialog::backdrop {
   background-color: rgb(0, 0, 0, 0.6);
-  color: var(--color3);
+}
+
+dialog h2 {
+    font-size: 2rem;
+    line-height: 4rem;
+    background-color: var(--color2);
+    border-radius: 0.5rem;
+}
+
+dialog span {
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .themeSelect {
   display: none;
 }
-
 .themeOptions {
   display: flex;
+  flex-wrap: wrap;
+  /* width: 90%; */
+  height: 73%;
+  overflow: scroll;
 }
 
 .themeType {
   width: 33.3%;
   height: 10rem;
-}
-
-.modalText {
-  text-align: center;
 }
 
 .navbar {

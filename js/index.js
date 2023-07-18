@@ -42,4 +42,4 @@ switchWater.addEventListener('click', function() {
   theme.classList.add('water')
 });
 
-var themeSelected = document.getElementById(themeSelect)
+ 
