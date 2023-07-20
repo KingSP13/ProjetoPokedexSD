@@ -9,3 +9,18 @@
   height: 400px;
   background-color: aquamarine;
 }
+
+/* Tema 1 */
+#inputDiv[data-tema="tema1"] {
+  background-color: #f50404;
+}
+
+/* Tema 2 */
+#inputDiv[data-tema="tema2"] {
+  background-color: #0f68ee;
+}
+
+/* Tema 3 */
+#inputDiv[data-tema="tema3"] {
+  background-color: #ffd9b3;
+}

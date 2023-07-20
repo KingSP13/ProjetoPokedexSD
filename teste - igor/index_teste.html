@@ -3,16 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Seleção de Tema</title>
   <link rel="stylesheet" href="index_teste.css">
 </head>
 <body>
-  <form action="userData">
-    <div id="inputDiv">
-      <fieldset>
-        <input type="radio" name="" id="">
-      </fieldset>
-    </div>
-  </form>
+  <h1>Escolha um tema:</h1>
+  <div id="inputDiv">
+    <label>
+      <input type="radio" name="tema" value="tema1"> Tema 1
+    </label>
+    <label>
+      <input type="radio" name="tema" value="tema2"> Tema 2
+    </label>
+    <label>
+      <input type="radio" name="tema" value="tema3"> Tema 3
+    </label>
+  </div>
+
+  <button class="fireTheme">Tema Fire</button>
+  <button class="grassTheme">Tema Grass</button>
+  <button class="waterTheme">Tema Water</button> <br>
+
+  <button onclick="salvarTemaPadrao()">Salvar Tema Padrão</button>
+
+  <script src="js_teste.js"></script>
 </body>
 </html>
