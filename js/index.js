@@ -63,7 +63,7 @@ switchDark.addEventListener('click', function() {
   theme.classList.remove('palette-grass')
   theme.classList.remove('palette-water')
   theme.classList.remove('palette-dark')
-  theme.classList.remove('palette-elextric')
+  theme.classList.remove('palette-electric')
   theme.classList.remove('palette-steel')
   theme.classList.add('palette-dark')
 });
@@ -72,7 +72,7 @@ switchElectric.addEventListener('click', function() {
   theme.classList.remove('palette-grass')
   theme.classList.remove('palette-water')
   theme.classList.remove('palette-dark')
-  theme.classList.remove('palette-elextric')
+  theme.classList.remove('palette-electric')
   theme.classList.remove('palette-steel')
   theme.classList.add('palette-electric')
 });
@@ -81,7 +81,7 @@ switchSteel.addEventListener('click', function() {
   theme.classList.remove('palette-grass')
   theme.classList.remove('palette-water')
   theme.classList.remove('palette-dark')
-  theme.classList.remove('palette-elextric')
+  theme.classList.remove('palette-electric')
   theme.classList.remove('palette-steel')
   theme.classList.add('palette-steel')
 });
