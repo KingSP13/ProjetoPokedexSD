@@ -94,19 +94,3 @@ switchSteel.addEventListener('click', function() {
   theme.classList.add('palette-steel')
 });
 
-
-// Função para aplicar o tema atualmente armazenado no LocalStorage
-function applyStoredTheme() {
-  const selectedTheme = localStorage.getItem('selectedTheme');
-
-  // Se o tema estiver armazenado, aplicá-lo ao corpo do documento
-  if (selectedTheme) {
-    theme.classList.remove('palette-fire');
-    theme.classList.remove('palette-grass');
-    theme.classList.remove('palette-water');
-    theme.classList.remove('palette-dark');
-    theme.classList.remove('palette-electric');
-    theme.classList.remove('palette-steel');
-    theme.classList.add(selectedTheme);
-  }
-}
