@@ -2,6 +2,10 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
 
+
+/* MEDIA QUERIES */
+
+
 @media (min-width: 1024px) {
 .navbar {
   padding-inline: 8vw;
@@ -53,6 +57,7 @@
 
 }
 
+/* THEMES AND GENERAL CONFIG */
 
 html {
   --color1: #ffffff;
@@ -142,28 +147,57 @@ html {
     color: white;
 }
 
+
+
+/* NAVBAR CONFIG */
+
+
+
+.navbar {
+  background-color: var(--color1)
+}
+a.navbar-item:hover {
+  background-color: var(--color3);
+  color: white;
+}
+
+.drop-hover {
+  width: 200px;
+  text-align: justify;
+
+}
+
+.report {
+  color: red;
+}
+
+.navbar-item-left {
+  width: 80px;
+}
+
+/* DIALOG/MODAL CONFIG */
+
+
 dialog {
   width: 33rem;
   max-width: 90vw;
-  height: 30rem;
+  height: 40rem;
   max-height: 90vw;
+  text-align: center;
+  top: 15%;
+  margin-inline: auto;
   border-radius: 0.5rem;
   padding: 1.5rem;
-  position: absolute;
-  left: 50%;
-  top: 50%;
+  overflow: hidden scroll;
   border: 2px solid black;
-  transform: translate(-50%, -55%); 
   background-color: var(--color4);
 }
 
-.modalText {
-    text-align: center;
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.8); 
+  backdrop-filter: blur(5px);
 }
 
-dialog::backdrop {
-  background-color: rgb(0, 0, 0, 0.6);
-}
 
 dialog h2 {
     font-size: 2rem;
@@ -205,18 +239,32 @@ dialog span {
   background: var(--color1);
 }
 
-.navbar {
-  background-color: var(--color1)
-}
-a.navbar-item:hover {
-  background-color: var(--color3);
-  color: white;
+.modalFooter {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
-.drop-hover {
-  width: 200px;
-  text-align: justify;
+.modalBtn {
+  background-color: var(--color2);
+  padding: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
 }
+
+.modalBtn:hover {
+  background-color: var(--color3);
+}
+
+.modalBtn:active {
+  background-color: var(--color4);
+}
+/* BODY AND CONTENT CONFIG */
+
 
 .bodyHome {
   height: 100vh;
@@ -227,6 +275,18 @@ a.navbar-item:hover {
   background-repeat: no-repeat;
 }
 
+.main-container-index {
+  text-align: center;
+  position: center;
+  margin-inline: auto;
+  z-index: 5;
+  margin-top: 8%;
+}
+
+
+
+/* POKEDEX CONFIG */
+
 .pokedexBody {
   text-align: center;
   background: linear-gradient(to bottom, var(--color1), var(--color4));
@@ -234,22 +294,6 @@ a.navbar-item:hover {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-}
-
-.report {
-  color: red;
-}
-
-.navbar-item-left {
-  width: 80px;
-}
-
-.main-container-index {
-  text-align: center;
-  position: center;
-  margin-inline: auto;
-  z-index: 5;
-  margin-top: 8%;
 }
 
 .pokedexMain {
