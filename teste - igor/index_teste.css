@@ -4,23 +4,33 @@
   box-sizing: border-box;
 }
 
-#inputDiv {
-  width: 400px;
-  height: 400px;
-  background-color: aquamarine;
+.themeOptions {
+  width: 35rem;
+  max-width: 90vw;
+  height: 35rem;
+  max-height: 90vh;
+  text-align: center;
+  top: 15%;
+  margin-inline: auto;
+  border-radius: 0.5rem;
+  overflow: hidden scroll;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* Tema 1 */
-#inputDiv[data-tema="tema1"] {
-  background-color: #f50404;
+.themeSelect {
+  display: none;
+}
+.themeType {
+  width: 50%;
 }
 
-/* Tema 2 */
-#inputDiv[data-tema="tema2"] {
-  background-color: #0f68ee;
-}
-
-/* Tema 3 */
-#inputDiv[data-tema="tema3"] {
-  background-color: #ffd9b3;
+.modalBtn {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 37% auto 37% auto;
 }

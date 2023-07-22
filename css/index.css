@@ -11,16 +11,6 @@
   padding-inline: 8vw;
 }
 
-.themeOptions {
-  display: flex;
-  flex-wrap: wrap;
-  height: 70%;
-}
-
-.themeType {
-  width: 33.3%;
-  cursor: pointer;
-}
 
 }
 
@@ -42,16 +32,12 @@
   padding-inline: 29vw;
 }
 
-.themeOptions {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 75%;
+dialog {
+  height: 90%;
 }
 
-.themeOption {
+label {
   width: 50%;
-  cursor: pointer;
 }
 
 
@@ -186,13 +172,13 @@ a.navbar-item:hover {
 dialog {
   width: 33rem;
   max-width: 90vw;
-  height: 40rem;
-  max-height: 90vw;
+  height: 35rem;
+  max-height: 90vh;
   text-align: center;
   top: 15%;
   margin-inline: auto;
   border-radius: 0.5rem;
-  padding: 1.5rem;
+  padding: 1%;
   overflow: hidden scroll;
   border: 2px solid black;
   background-color: var(--color4);
@@ -206,7 +192,7 @@ dialog::backdrop {
 
 dialog h2 {
     font-size: 2rem;
-    line-height: 4rem;
+    line-height: 3rem;
     background-color: var(--color2);
     border-radius: 0.5rem;
 }
@@ -217,12 +203,23 @@ dialog span {
     display: inline-block;
     background-color: var(--color2);
     border-radius: 0.5rem;
-    margin-top: 1%;
-    padding-inline: 3rem;
+    margin-top: 2%;
 }
 
 .themeSelect {
   display: none;
+}
+
+.themeOptions {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 75%;
+}
+
+label {
+  width: 33%;
+  max-width: 50%;
 }
 
 ::-webkit-scrollbar {

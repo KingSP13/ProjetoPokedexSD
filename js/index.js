@@ -94,3 +94,5 @@ switchSteel.addEventListener('click', function() {
   theme.classList.add('palette-steel')
 });
 
+localStorage.setItem('localTheme', 'themeSelect')
+
