@@ -94,5 +94,10 @@ switchSteel.addEventListener('click', function() {
   theme.classList.add('palette-steel')
 });
 
+<<<<<<< Updated upstream
 localStorage.setItem('localTheme', 'themeSelect')
 
+=======
+
+console.log(themeSelect)
+>>>>>>> Stashed changes
