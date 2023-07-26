@@ -14,8 +14,13 @@
   <!--NAVBAR HERE !!!--> 
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
+<<<<<<< HEAD
       <a class="navbar-item mini-logo" href="index.html">
         <img src="../archieves/infra-components/mini-logo.png">
+=======
+      <a class="navbar-item mini-logo" href="../index.html">
+        <img src="https://i.imgur.com/5Zbu512.png">
+>>>>>>> parent of a225bc6 (mobile version update)
       </a>
   
       <a role="button" id="menuBurger" class="navbar-burger menuBurger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -47,81 +52,58 @@
           
           <span class="dialog-subtitle">Try our dinamic themes to customize all your experience in the website.</span>
           <div class="themeOptions">
+            <input type="radio" class="themeSelect" value="theme1" id="palette-fire" name="themeSelect" onchange="changetheme(this.value)">
+              <img src="../archieves/type(1).png" class="themeType fireTheme"></img>
 
-            <input type="radio" class="themeSelect" value="theme1" id="palette-fire" name="themeSelect">
-              <label for="palette-fire">
-                <img src="../archieves/types-emblem/type(1).png" class="themeType themeOption fireTheme"></img>
-              </label>
+            <input type="radio" class="themeSelect" value="theme2" id="palette-grass" name="themeSelect" onchange="changetheme(this.value)">
+              <img src="../archieves/type(2).png" class="themeType grassTheme"></img>
 
-            <input type="radio" class="themeSelect" value="theme2" id="palette-grass" name="themeSelect">
-              <label for="palette-grass">
-                <img src="../archieves/types-emblem/type(2).png" class="themeType themeOption grassTheme"></img>
-              </label>
+            <input type="radio" class="themeSelect" value="theme3" id="palette-water" name="themeSelect" onchange="changetheme(this.value)">
+              <img src="../archieves/type(3).png" class="themeType waterTheme"></img>
 
-            <input type="radio" class="themeSelect" value="theme3" id="palette-water" name="themeSelect">
-              <label for="palette-water">
-                <img src="../archieves/types-emblem/type(3).png" class="themeType themeOption waterTheme"></img>
-              </label>
+            <input type="radio" class="themeSelect" value="theme4" id="palette-fighter" name="themeSelect" onchange="changetheme(this.value)">
+              <img src="../archieves/type(4).png" class="themeType fireTheme"></img>
 
-            <input type="radio" class="themeSelect" value="theme4" id="palette-dark" name="themeSelect">
-              <label for="palette-dark">
-                <img src="../archieves/types-emblem/type(4).png" class="themeType themeOption darkTheme"></img>
-              </label>
+            <input type="radio" class="themeSelect" value="theme5" id="palette-electric" name="themeSelect" onchange="changetheme(this.value)">
+              <img src="../archieves/type(5).png" class="themeType grassTheme"></img>
 
-            <input type="radio" class="themeSelect" value="theme5" id="palette-electric" name="themeSelect">
-              <label for="palette-electric">
-                <img src="../archieves/types-emblem/type(5).png" class="themeType themeOption electricTheme"></img>
-              </label>
+            <input type="radio" class="themeSelect" value="theme6" id="palette-steel" name="themeSelect" onchange="changetheme(this.value)">
+              <img src="../archieves/type(6).png" class="themeType waterTheme"></img>
 
-            <input type="radio" class="themeSelect" value="theme6" id="palette-steel" name="themeSelect">
-              <label for="palette-steel">
-                <img src="../archieves/types-emblem/type(6).png" class="themeType themeOption steelTheme"></img>
-              </label>
+            <input type="radio" class="themeSelect" value="theme7" id="palette-ghost" name="themeSelect" onchange="changetheme(this.value)">
+              <img src="../archieves/type(7).png" class="themeType fireTheme"></img>
 
-            <input type="radio" class="themeSelect" value="theme7" id="palette-ghost" name="themeSelect">
-              <label for="palette-ghost">
-                <img src="../archieves/types-emblem/type(7).png" class="themeType themeOption fireTheme"></img>
-              </label>
+            <input type="radio" class="themeSelect" value="theme8" id="palette-normal" name="themeSelect" onchange="changetheme(this.value)">
+              <img src="../archieves/type(8).png" class="themeType grassTheme"></img>
 
-            <input type="radio" class="themeSelect" value="theme8" id="palette-normal" name="themeSelect">
-              <label for="palette-normal">
-                <img src="../archieves/types-emblem/type(8).png" class="themeType themeOption grassTheme"></img>
-              </label>
-
-            <input type="radio" class="themeSelect" value="theme9" id="palette-fighter" name="themeSelect">
-              <label for="palette-fighter">
-                <img src="../archieves/types-emblem/type(9).png" class="themeType themeOption waterTheme"></img>
-              </label>
+            <input type="radio" class="themeSelect" value="theme9" id="palette-dark" name="themeSelect" onchange="changetheme(this.value)">
+              <img src="../archieves/type(9).png" class="themeType waterTheme"></img>
             
-              <div class="modalFooter">
-                <button class="modalBtn" id="saveThemeBtn"> Save Theme </button>
-                <button class="modalBtn" id="cancelModal"> Cancel </button>
-              </div>
           </div>
 
         </dialog>
       </div>
-      <div class="navbar-end navbar-item drop-hover has-dropdown is-hoverable is-hidden-touch">
-        <a class="navbar-link">
-          Meet Us !
-        </a>
-        <div class="navbar-dropdown">
-          <div class="dropdown-content">
-            <div class="dropdown-item">
-              <p>Here you can find who did this beautiful project and leave a feedback. &#128516;
-            </div>
-            <hr class="dropdown-divider">
-            <a class="navbar-item" href="#">
-              Who we are.
-            </a>
-            <a class="navbar-item" href="#">
-              Send us hi.
-            </a>
-            <hr class="dropdown-divider">
-            <a class="navbar-item" href="#">
-              <p class="report">Report a bug !</p>
-            </a>
+    </div>
+    <div class="navbar-item drop-hover has-dropdown is-hoverable is-hidden-touch">
+      <a class="navbar-link">
+        Meet Us !
+      </a>
+      <div class="navbar-dropdown">
+        <div class="dropdown-content">
+          <div class="dropdown-item">
+            <p>Here you can find who did this beautiful project and leave a feedback. &#128516;
           </div>
+          <hr class="dropdown-divider">
+          <a class="navbar-item" href="#">
+            Who we are.
+          </a>
+          <a class="navbar-item" href="#">
+            Send us hi.
+          </a>
+          <hr class="dropdown-divider">
+          <a class="navbar-item" href="#">
+            <p class="report">Report a bug !</p>
+          </a>
         </div>
       </div>
     </div>
