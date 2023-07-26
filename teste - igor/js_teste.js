@@ -13,6 +13,9 @@ var radioButons = document.querySelectorAll('themeSelect')
 
 alert(radioButons.checked)
 
-onclick.alertTheme
+alertTheme.onclick
 }
 
+function alertTheme() {
+
+}
