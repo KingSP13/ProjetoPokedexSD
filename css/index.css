@@ -5,6 +5,13 @@
 
 @media (max-width: 1023px) {
 
+.navigation {
+  display: none;
+}
+
+
+
+
 dialog {
   height: 90%;
 }
@@ -16,6 +23,12 @@ label {
   width: 50%;
 }
 
+}
+
+@media (min-width: 1024px) {
+label {
+  width: 33.3%;
+}
 }
 
 /* THEMES AND GENERAL CONFIG */
@@ -132,6 +145,10 @@ html {
   max-width: 8rem;
 }
 
+nav > img {
+  cursor: pointer;
+}
+
 nav > div {
   display: flex;
   align-items: center;
@@ -139,15 +156,41 @@ nav > div {
   color: var(--color4);
 }
 
-nav > div > a {
+.navigation {
   padding: 13px;
-  text-decoration: none;
   cursor: pointer;
+  text-align: center;
 }
-nav > div > a:hover {
+
+
+
+
+
+
+
+
+
+
+
+.navigation:hover {
   background-color: var(--color3);
   border-radius: 5rem;
 }
+
+a {
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* DIALOG/MODAL CONFIG */
 
@@ -198,10 +241,6 @@ dialog span {
   flex-wrap: wrap;
   width: 100%;
   height: 75%;
-}
-
-label {
-  width: 33.3%;
 }
 
 .themeType {
