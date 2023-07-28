@@ -1,11 +1,162 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+
+/* MEDIA QUERIES */
+
+
+
+@media (max-width: 1023px) {
+
+
+
+dialog {
+  height: 90%;
+}
+
+label {
+  width: 50%;
+}
+
+
+}
+
+/* THEMES AND GENERAL CONFIG */
+
+html {
+  --color1: #ffffff;
+  --color2: #87BAC7;
+  --color3: #658A94;
+  --color4: #314347;
+
+  scroll-behavior: smooth;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: .7s;
 }
 
-.themeOptions {
-  width: 35rem;
+.palette-fire {
+  --color1: #f4e5a3; /*navbar*/
+  --color2: #ec8146; /*hover*/
+  --color3: #bf2121; /*body*/
+  --color4: #9a1919; /*sections*/
+  background-image: url(../archieves/backgrounds/fire-bg-bs.jpg) !important;
+}
+.palette-fire dialog{
+    color: white;
+}
+
+.palette-grass {
+  --color1: #3DE0BD; /*navbar*/
+  --color2: #3dc97c; /*hover*/
+  --color3: #4c9500; /*body*/
+  --color4: #3d7800; /*sections*/
+  background-image: url(../archieves/backgrounds/grass-bg-bs.jpg) !important;
+}
+.palette-grass dialog{
+    color: white;
+}
+
+.palette-water {
+  --color1: #8CFAF5; /*navbar*/
+  --color2: #05CEF7; /*hover*/
+  --color3: #0588ED; /*body*/
+  --color4: #0d53b0; /*sections*/
+  background-image: url(../archieves/backgrounds/water-bg-bs.jpg) !important;
+}
+.palette-water dialog{
+    color: white;
+}
+
+.palette-dark {
+  --color1: #330000; /*navbar*/
+  --color2: #032900; /*hover*/
+  --color3: #010025; /*body*/
+  --color4: #000000; /*sections*/
+  --color5: #ffee00; /*EXCEPTION*/
+  background-image: url(../archieves/backgrounds/dark-bg-bs.jpg) !important;
+}
+.palette-dark dialog, p, .navbar-item {
+    color: var(--color5)!important;
+}
+.palette-dark ::-webkit-scrollbar-track {
+  background: var(--color4);
+}
+
+.palette-electric {
+  --color1: #f4f818; /*navbar*/
+  --color2: #f5e844; /*hover*/
+  --color3: #e9d23b; /*body*/
+  --color4: #f3ae33; /*sections*/
+  background-image: url(../archieves/backgrounds/electric-bg-bs.jpg) !important;
+}
+.palette-electric dialog{
+    color: white;
+}
+
+.palette-steel {
+  --color1: #b4b4b4; /*navbar*/
+  --color2: #858585; /*hover*/
+  --color3: #6e6e6d; /*body*/
+  --color4: #29292a; /*sections*/
+  background-image: url(../archieves/backgrounds/steel-bg-bs.jpg) !important;
+}
+.palette-steel dialog{
+    color: white;
+}
+
+
+
+/* NAVBAR CONFIG */
+
+.navbar {
+  background-color: var(--color1);
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: var(--color1);
+}
+
+.navbar-div-left {
+  width: 75%;
+  max-width: 50rem;
+  gap: 1rem;
+}
+.navbar-div-rigth {
+  width: 25%;
+  max-width: 8rem;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--color4);
+}
+
+nav > div > a {
+  padding: 13px;
+  text-decoration: none;
+  cursor: pointer;
+}
+nav > div > a:hover {
+  background-color: var(--color3);
+  border-radius: 5rem;
+}
+
+/* DIALOG/MODAL CONFIG */
+
+
+dialog {
+  width: 33rem;
   max-width: 90vw;
   height: 35rem;
   max-height: 90vh;
@@ -13,24 +164,220 @@
   top: 15%;
   margin-inline: auto;
   border-radius: 0.5rem;
+  padding: 1%;
   overflow: hidden scroll;
   border: 2px solid black;
-  display: flex;
-  flex-wrap: wrap;
+  background-color: var(--color4);
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.8); 
+  backdrop-filter: blur(5px);
+}
+
+
+dialog h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+    background-color: var(--color2);
+    border-radius: 0.5rem;
+}
+
+dialog span {
+    font-size: 1.2rem;
+    text-align: center;
+    display: inline-block;
+    background-color: var(--color2);
+    border-radius: 0.5rem;
+    margin-top: 2%;
 }
 
 .themeSelect {
   display: none;
 }
-.themeType {
-  width: 50%;
+
+.themeOptions {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 75%;
+}
+
+label {
+  width: 33%;
+  max-width: 50%;
+}
+
+::-webkit-scrollbar {
+  width: .6rem;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid var(--color3);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color3);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color2);
+}
+::-webkit-scrollbar-thumb:active {
+  background: var(--color1);
+}
+
+.modalFooter {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .modalBtn {
-  background-color: white;
+  background-color: var(--color2);
   padding: 1rem;
   border-radius: 2rem;
   cursor: pointer;
   font-size: 1rem;
-  margin: 37% auto 37% auto;
+}
+
+.modalBtn:hover {
+  background-color: var(--color3);
+  color: var(--color1);
+}
+
+.modalBtn:active {
+  background-color: var(--color4);
+  color: var(--color1);
+}
+
+
+.palette-dark .modalBtn:hover {
+  color: var(--color5);
+}
+
+.palette-dark .modalBtn:focus {
+  color: var(--color5);
+}
+
+/* BODY AND CONTENT CONFIG */
+
+
+.bodyHome {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../archieves/backgrounds/home-bg-bs.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-container-index {
+  text-align: center;
+  position: relative;
+  bottom: 50%;
+}
+
+section > span {
+  color: var(--color4);
+  opacity: 0.9;
+}
+
+
+
+/* POKEDEX CONFIG */
+
+.pokedexBody {
+  text-align: center;
+  background: linear-gradient(to bottom, var(--color1), var(--color4));
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.pokedexMain {
+  display: inline-block;
+  margin-top: 1%;
+  position: relative;
+  font-family: 'Oxanium', cursive;
+}
+
+.pokemon__image {
+  position: absolute;
+  bottom: 55%;
+  left: 50%;
+  transform: translate(-63%, 20%);
+  height: 18%;
+}
+
+.pokemon__data {
+  position: absolute;
+  font-weight: 600;
+  color: #aaa;
+  top: 53%;
+  right: 27%;
+  font-size: clamp(8px, 5vw, 25px);
+}
+
+.pokemon__name {
+  color: #3a444d;
+  text-transform: capitalize;
+}
+
+.form {
+  position: absolute;
+  width: 65%;
+  top: 66%;
+  left: 13.5%;
+}
+
+.input__search {
+  width: 88%;
+  padding: 5%;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #3a444d;
+  font-size: clamp(8px, 5vw, 1rem);
+  box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+}
+
+.btns {
+  position: absolute;
+  bottom: 10%;
+  left: 49%;
+  width: 57%;
+  transform: translate(-57%, 0);
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  width: 50%;
+  padding: 4%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+.btn:active {
+  box-shadow: inset -4px 4px 0 #222;
+  font-size: 0.9rem;
+}
+
+.pokedex__img {
+  width: 85%;
+  max-width: 365px;
 }

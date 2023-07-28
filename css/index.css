@@ -1,36 +1,9 @@
 @charset "UTF-8";
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
-
 
 /* MEDIA QUERIES */
 
-
-@media (min-width: 1024px) {
-.navbar {
-  padding-inline: 8vw;
-}
-
-
-}
-
-
 @media (max-width: 1023px) {
-.navbar-burger {
-  width: 100px;
-  right: 5vw;
-}
-
-.mini-logo {
-  width: 100px;
-  left: 5vw;
-}
-
-.main-container {
-  width: fit-content;
-  height: fit-content;
-  padding-inline: 29vw;
-}
 
 dialog {
   height: 90%;
@@ -39,7 +12,9 @@ dialog {
 label {
   width: 50%;
 }
-
+.themeType {
+  width: 50%;
+}
 
 }
 
@@ -53,14 +28,14 @@ html {
 
   scroll-behavior: smooth;
 
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 0.5s;
+  transition: .7s;
 }
 
 .palette-fire {
@@ -137,56 +112,64 @@ html {
 
 /* NAVBAR CONFIG */
 
-
-
 .navbar {
-  background-color: var(--color1)
-}
-a.navbar-item:hover {
-  background-color: var(--color3);
-  color: white;
-}
-
-.report {
-  color: red;
-}
-
-.navbar-item-left {
-  width: 80px;
-}
-
-
-.drop-hover {
-  width: 200px;
-  text-align: justify;
-}
-
-.drop-hover a {
+  background-color: var(--color1);
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
   background-color: var(--color1);
 }
 
+.navbar-div-left {
+  width: 75%;
+  max-width: 50rem;
+  gap: 1rem;
+}
+.navbar-div-rigth {
+  width: 25%;
+  max-width: 8rem;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--color4);
+}
+
+nav > div > a {
+  padding: 13px;
+  text-decoration: none;
+  cursor: pointer;
+}
+nav > div > a:hover {
+  background-color: var(--color3);
+  border-radius: 5rem;
+}
 
 /* DIALOG/MODAL CONFIG */
 
 
 dialog {
-  width: 33rem;
+  width: 35.9rem;
   max-width: 90vw;
-  height: 35rem;
+  height: 37rem;
   max-height: 90vh;
   text-align: center;
-  top: 15%;
+  top: 5%;
   margin-inline: auto;
-  border-radius: 0.5rem;
-  padding: 1%;
+  border-radius: 0.7rem;
+  padding: 1rem;
   overflow: hidden scroll;
   border: 2px solid black;
   background-color: var(--color4);
 }
 
 dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.8); 
-  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, .6); 
+  backdrop-filter: blur(6px);
 }
 
 
@@ -218,8 +201,11 @@ dialog span {
 }
 
 label {
-  width: 33%;
-  max-width: 50%;
+  width: 33.3%;
+}
+
+.themeType {
+  width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -287,14 +273,20 @@ label {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .main-container-index {
   text-align: center;
-  position: center;
-  margin-inline: auto;
-  z-index: 5;
-  margin-top: 8%;
+  position: relative;
+  bottom: 50%;
+}
+
+section > span {
+  color: var(--color4);
+  opacity: 0.9;
 }
 
 

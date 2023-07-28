@@ -1,15 +1,3 @@
-// MENU BURGUER FUNCTIONS
-
-
-const triggerMenuBurger = document.getElementById('menuBurger')
-const showBurguerItems = document.getElementById('burgerItems')
-
-triggerMenuBurger.addEventListener('click', function() {
-triggerMenuBurger.classList.toggle('is-active')
-showBurguerItems.classList.toggle('is-active')
-});
-
-
 // MODAL CONFIG
 
 
@@ -18,8 +6,10 @@ const modal = document.querySelector("dialog")
 const buttonClose = document.getElementById("cancelModal")
 const saveTheme = document.getElementById("saveThemeBtn")
 
+
 switchTheme.onclick = function() {
-  modal.show()
+  modal.showModal()
+  dialogPolyfill.registerDialog(dialog);
 }
 buttonClose.onclick = function() {
   modal.close()
@@ -27,6 +17,14 @@ buttonClose.onclick = function() {
 saveTheme.onclick = function() {
   modal.close()
 }
+
+
+
+
+// document.getElementById('switchTheme').onclick = function() {
+//   alert("Você clicou no botão!");
+// };
+
 
 
 // THEME SWITCH FUNCTIONS

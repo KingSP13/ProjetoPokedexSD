@@ -1,65 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seleção de Tema</title>
-  <link rel="stylesheet" href="index_teste.css">
-</head>
-<body>
-  <div class="themeOptions">
-
-    <input type="radio" class="themeSelect" value="theme1" id="palette-fire" name="themeSelect">
-      <label for="palette-fire">
-        <img src="../archieves/types-emblem/type(1).png" class="themeType themeOption fireTheme"></img>
-      </label>
-
-    <input type="radio" class="themeSelect" value="theme2" id="palette-grass" name="themeSelect">
-      <label for="palette-grass" class="themeOptionLabel">
-        <img src="../archieves/types-emblem/type(2).png" class="themeType themeOption grassTheme"></img>
-      </label>
-
-    <input type="radio" class="themeSelect" value="theme3" id="palette-water" name="themeSelect">
-      <label for="palette-water">
-        <img src="../archieves/types-emblem/type(3).png" class="themeType themeOption waterTheme"></img>
-      </label>
-
-    <input type="radio" class="themeSelect" value="theme4" id="palette-dark" name="themeSelect">
-      <label for="palette-dark">
-        <img src="../archieves/types-emblem/type(4).png" class="themeType themeOption darkTheme"></img>
-      </label>
-
-    <input type="radio" class="themeSelect" value="theme5" id="palette-electric" name="themeSelect">
-      <label for="palette-electric">
-        <img src="../archieves/types-emblem/type(5).png" class="themeType themeOption electricTheme"></img>
-      </label>
-
-    <input type="radio" class="themeSelect" value="theme6" id="palette-steel" name="themeSelect">
-      <label for="palette-steel">
-        <img src="../archieves/types-emblem/type(6).png" class="themeType themeOption steelTheme"></img>
-      </label>
-
-    <input type="radio" class="themeSelect" value="theme7" id="palette-ghost" name="themeSelect">
-      <label for="palette-ghost">
-        <img src="../archieves/types-emblem/type(7).png" class="themeType themeOption fireTheme"></img>
-      </label>
-
-    <input type="radio" class="themeSelect" value="theme8" id="palette-normal" name="themeSelect">
-      <label for="palette-normal">
-        <img src="../archieves/types-emblem/type(8).png" class="themeType themeOption grassTheme"></img>
-      </label>
-
-    <input type="radio" class="themeSelect" value="theme9" id="palette-fighter" name="themeSelect">
-      <label for="palette-fighter">
-        <img src="../archieves/types-emblem/type(9).png" class="themeType themeOption waterTheme"></img>
-      </label>
-    
-      <div class="modalFooter">
-        <button class="modalBtn" id="saveThemeBtn"> Save Theme </button>
-        <button class="modalBtn" id="cancelModal"> Cancel </button>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projeto - Pokedex</title>
+    <link rel="stylesheet" href="index_teste.css">
+    <link rel="icon" type="image/x-icon" href="../archieves/infra-components/icons8-pokebola-48.png">
+  </head>
+  <body class="bodyHome">
+    <!--NAVBAR HERE !!!-->    
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-div-left">
+        <span href="#" class="navbar-item">
+          <img src="../archieves/infra-components/mini-logo.png" alt="">
+        </span>
+        <a href="#" class="navbar-item">
+          Lobby
+        </a>
+        <a href="#" class="navbar-item">
+          Pokedex
+        </a>
+        <a href="#" class="navbar-item">
+          Gallery
+        </a>
+        <a class="navbar-item" id="switchTheme">
+          Switch Theme
+        </a>
       </div>
-  </div>
+      <div class="navbar-div-rigth">
+        <a href="#" class="navbar-item navbar-item-end">
+          Meet Us !
+        </a>
+      </div>
+    </nav>
+    <!--NAVBAR HERE !!!-->
+    <main>
+      <section class="main-container-index">
+        <span class="main-text">
+          <span class="title central-text">
+            Hello, welcome to PokeHUT
+          </span>
+          <span class="subtitle central-text">
+            <p>Grab a cup of coffee, spare a few minutes</p> 
+            <p>and find your favorite pokemon.</p>
+             <p>Enjoy !</p>
+          </span>
+        </span>
+      </section>
+    </main>
+    <dialog class="modalText">
+  
+      <h2> Choose a theme </h2>
+      
+      <span class="dialog-subtitle">Try our dinamic themes to customize all your experience in the website.</span>
+      <div class="themeOptions">
 
-  <script src="js_teste.js"></script>
-</body>
+        <input type="radio" class="themeSelect" value="theme1" id="palette-fire" name="themeSelect">
+          <label for="palette-fire">
+            <img src="../archieves/types-emblem/type(1).png" class="themeType themeOption fireTheme"></img>
+          </label>
+
+        <input type="radio" class="themeSelect" value="theme2" id="palette-grass" name="themeSelect">
+          <label for="palette-grass">
+            <img src="../archieves/types-emblem/type(2).png" class="themeType themeOption grassTheme"></img>
+          </label>
+
+        <input type="radio" class="themeSelect" value="theme3" id="palette-water" name="themeSelect">
+          <label for="palette-water">
+            <img src="../archieves/types-emblem/type(3).png" class="themeType themeOption waterTheme"></img>
+          </label>
+
+        <input type="radio" class="themeSelect" value="theme4" id="palette-dark" name="themeSelect">
+          <label for="palette-dark">
+            <img src="../archieves/types-emblem/type(4).png" class="themeType themeOption darkTheme"></img>
+          </label>
+
+        <input type="radio" class="themeSelect" value="theme5" id="palette-electric" name="themeSelect">
+          <label for="palette-electric">
+            <img src="../archieves/types-emblem/type(5).png" class="themeType themeOption electricTheme"></img>
+          </label>
+
+        <input type="radio" class="themeSelect" value="theme6" id="palette-steel" name="themeSelect">
+          <label for="palette-steel">
+            <img src="../archieves/types-emblem/type(6).png" class="themeType themeOption steelTheme"></img>
+          </label>
+
+        <input type="radio" class="themeSelect" value="theme7" id="palette-ghost" name="themeSelect">
+          <label for="palette-ghost">
+            <img src="../archieves/types-emblem/type(7).png" class="themeType themeOption fireTheme"></img>
+          </label>
+
+        <input type="radio" class="themeSelect" value="theme8" id="palette-normal" name="themeSelect">
+          <label for="palette-normal">
+            <img src="../archieves/types-emblem/type(8).png" class="themeType themeOption grassTheme"></img>
+          </label>
+
+        <input type="radio" class="themeSelect" value="theme9" id="palette-fighter" name="themeSelect">
+          <label for="palette-fighter">
+            <img src="../archieves/types-emblem/type(9).png" class="themeType themeOption waterTheme"></img>
+          </label>
+        
+          <div class="modalFooter">
+            <button class="modalBtn" id="saveThemeBtn"> Save Theme </button>
+            <button class="modalBtn" id="cancelModal"> Cancel </button>
+          </div>
+      </div>
+
+    </dialog>
+    <script src="../js/index.js"></script>
+  </body>
 </html>
