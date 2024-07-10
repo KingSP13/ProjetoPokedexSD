@@ -3,14 +3,11 @@
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1023px) {
+/* @media (max-width: 1023px) {
 
 .navigation {
   display: none;
 }
-
-
-
 
 dialog {
   height: 90%;
@@ -29,7 +26,7 @@ label {
 label {
   width: 33.3%;
 }
-}
+} */
 
 /* THEMES AND GENERAL CONFIG */
 
